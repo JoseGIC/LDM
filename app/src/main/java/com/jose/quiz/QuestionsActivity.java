@@ -1,23 +1,23 @@
 package com.jose.quiz;
 
-import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class QuestionsActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button botonInicio;
+    Button botonSalir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_questions);
 
-        botonInicio = (Button)findViewById(R.id.boton1);
-        botonInicio.setOnClickListener(this);
+        botonSalir = (Button)findViewById(R.id.boton2);
+        botonSalir.setOnClickListener(this);
     }
 
 
@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch(v.getId()) {
 
-            case R.id.boton1:
-                Intent intent = new Intent(MainActivity.this, QuestionsActivity.class);
+            case R.id.boton2:
+                Intent intent = new Intent(QuestionsActivity.this, MainActivity.class);
                 //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
                 startActivity(intent);
                 break;

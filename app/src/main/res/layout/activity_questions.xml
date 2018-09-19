@@ -9,15 +9,15 @@
     android:paddingBottom="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    tools:context="com.jose.quiz.MainActivity" >
+    tools:context="com.jose.quiz.QuestionsActivity" >
 
 
 
     <Button
-        android:id="@+id/boton1"
+        android:id="@+id/boton2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="Pulsar 1" />
+        android:text="Pulsar 2" />
 
 </LinearLayout>
