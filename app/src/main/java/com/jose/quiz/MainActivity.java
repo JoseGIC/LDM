@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button botonInicio;
+    Button botonDialogo;
     int contador;
 
     @Override
@@ -19,8 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         botonInicio = (Button)findViewById(R.id.boton1);
         botonInicio.setOnClickListener(this);
+        botonDialogo = (Button)findViewById(R.id.boton2);
+        botonDialogo.setOnClickListener(this);
 
-        contador=new Integer(2);
+        contador = new Integer(2);
     }
 
 
@@ -30,14 +33,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(v.getId()) {
 
             case R.id.boton1:
-                Intent intent = new Intent(MainActivity.this, Q1.class);
-                //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
+                Intent intent = new Intent(MainActivity.this, QuestionsActivity.class);
                 intent.putExtra("contador",contador);
                 startActivity(intent);
+                break;
+
+            case R.id.boton2:
+                Dialogs failDialog = new Dialogs(this);
+                failDialog.failDialog();
                 break;
 
             default:
                 break;
         }
     }
+
+
 }
