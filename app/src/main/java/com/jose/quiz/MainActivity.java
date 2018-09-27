@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button botonInicio;
+    int contador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         botonInicio = (Button)findViewById(R.id.boton1);
         botonInicio.setOnClickListener(this);
+
+        contador=new Integer(2);
     }
 
 
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.boton1:
                 Intent intent = new Intent(MainActivity.this, QuestionsActivity.class);
                 //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
+                intent.putExtra("contador",contador);
                 startActivity(intent);
                 break;
 

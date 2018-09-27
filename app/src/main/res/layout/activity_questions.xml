@@ -12,12 +12,20 @@
     tools:context="com.jose.quiz.QuestionsActivity" >
 
 
-
     <Button
         android:id="@+id/boton2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Pulsar 2" />
+        android:text="Pulsar 2"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/botonS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGUIENTE" />
+
+
+
 
 </LinearLayout>
