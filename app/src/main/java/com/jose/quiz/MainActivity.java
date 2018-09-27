@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(v.getId()) {
 
             case R.id.boton1:
-                Intent intent = new Intent(MainActivity.this, QuestionsActivity.class);
+                Intent intent = new Intent(MainActivity.this, Q1.class);
                 //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
                 intent.putExtra("contador",contador);
                 startActivity(intent);

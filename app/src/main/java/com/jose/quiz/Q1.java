@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class QuestionsActivity extends AppCompatActivity implements View.OnClickListener {
+public class Q1 extends AppCompatActivity implements View.OnClickListener {
 
     int contador;
     Button botonSalir;
@@ -17,12 +17,9 @@ public class QuestionsActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions);
+        setContentView(R.layout.activity_q1);
 
         contador= getIntent().getIntExtra("contador",0);
-
-        botonSiguiente= (Button) findViewById(R.id.botonS);
-        botonSiguiente.setOnClickListener(this);
 
         botonSalir = (Button)findViewById(R.id.boton2);
         botonSalir.setOnClickListener(this);
@@ -38,15 +35,13 @@ public class QuestionsActivity extends AppCompatActivity implements View.OnClick
 
         switch(v.getId()) {
 
-            case R.id.botonS:
-
-                contador++;
-                Toast.makeText(this, "Puntucacion " + contador , Toast.LENGTH_SHORT).show();
 
             case R.id.boton2:
 
-                Intent intent = new Intent(QuestionsActivity.this, MainActivity.class);
+                Intent intent = new Intent(Q1.this, MainActivity.class);
                 //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
+                contador++;
+                Toast.makeText(this, "Puntuacion " + contador , Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 break;
 
