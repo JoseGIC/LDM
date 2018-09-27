@@ -23,4 +23,15 @@ public class Dialogs {
         Dialog dialog = builder.create();
         dialog.show();
     }
+
+
+    public void exitDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        builder.setTitle("PAUSE");
+        builder.setMessage("¿Abandonar partida y salir?");
+        builder.setPositiveButton("Continuar", null);
+        builder.setNegativeButton("Salir", (dialog, id) -> activity.finish());
+        Dialog dialog = builder.create();
+        dialog.show();
+    }
 }

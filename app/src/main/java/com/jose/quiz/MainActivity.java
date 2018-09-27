@@ -39,8 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.boton2:
-                Dialogs failDialog = new Dialogs(this);
-                failDialog.failDialog();
+                new Dialogs(this).failDialog();
                 break;
 
             default:
@@ -48,5 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+
+    @Override
+    public void onBackPressed() {
+        new Dialogs(this).exitDialog();
+    }
 
 }
