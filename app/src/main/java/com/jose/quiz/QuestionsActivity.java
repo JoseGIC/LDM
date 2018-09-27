@@ -44,6 +44,7 @@ public class QuestionsActivity extends AppCompatActivity implements View.OnClick
                 Toast.makeText(this, "Puntucacion " + contador , Toast.LENGTH_SHORT).show();
 
             case R.id.boton2:
+
                 Intent intent = new Intent(QuestionsActivity.this, MainActivity.class);
                 //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
                 startActivity(intent);
