@@ -3,14 +3,13 @@ package com.jose.quiz;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.widget.Toast;
 
 public class Dialogs {
 
     private Activity activity;
 
-    public Dialogs(Activity activity) {
+    Dialogs(Activity activity) {
         this.activity = activity;
     }
 
@@ -27,7 +26,7 @@ public class Dialogs {
 
     public void exitDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setTitle("PAUSE");
+        builder.setTitle("SALIR");
         builder.setMessage("¿Abandonar partida y salir?");
         builder.setPositiveButton("Continuar", null);
         builder.setNegativeButton("Salir", (dialog, id) -> activity.finish());

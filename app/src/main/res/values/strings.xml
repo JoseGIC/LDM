@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">Freaky Quiz</string>
+    <string name="comenzar">Pulse la pantalla para comenzar</string>
+
+    <string name="confirmar">Confirmar</string>
+
+    <string name="q1">¿A qué personaje pertenece este arma?</string>
+    <string name="q2">question 2</string>
+    <string name="q3">question 3</string>
+    <string name="q4">question 4</string>
+
+    <string name="a1_1">Mickey</string>
+    <string name="a1_2">Sora</string>
+    <string name="a1_3">Link</string>
+    <string name="a1_4">Cloud</string>
+
+    <string name="a2_1">answer 1</string>
+    <string name="a2_2">answer 2</string>
+    <string name="a2_3">answer 3</string>
+    <string name="a2_4">answer 4</string>
+
+    <string name="a3_1">answer 1</string>
+    <string name="a3_2">answer 2</string>
+    <string name="a3_3">answer 3</string>
+    <string name="a3_4">answer 4</string>
+
+    <string name="a4_1">answer 1</string>
+    <string name="a4_2">answer 2</string>
+    <string name="a4_3">answer 3</string>
+    <string name="a4_4">answer 4</string>
+
+    // soy mu chulo y programo en SPANGLISH :D
 </resources>

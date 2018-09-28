@@ -19,7 +19,7 @@ public class Q1 extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q1);
 
-        contador= getIntent().getIntExtra("contador",0);
+        contador = getIntent().getIntExtra("contador",0);
 
         botonSalir = (Button)findViewById(R.id.boton2);
         botonSalir.setOnClickListener(this);
@@ -29,24 +29,26 @@ public class Q1 extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
-
-
     public void onClick(View v) {
 
         switch(v.getId()) {
 
-
             case R.id.boton2:
-
                 Intent intent = new Intent(Q1.this, MainActivity.class);
-                //intent.putExtra(EXTRA_DEVICE_ADDRESS, address);
                 contador++;
                 Toast.makeText(this, "Puntuacion " + contador , Toast.LENGTH_SHORT).show();
                 startActivity(intent);
+                finish();
                 break;
 
             default:
                 break;
         }
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        new Dialogs(this).exitDialog();
     }
 }
