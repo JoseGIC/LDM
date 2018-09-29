@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="@string/q1" />
+            android:text="@string/q4" />
 
         <Space
             android:layout_width="match_parent"
@@ -71,28 +71,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="@string/a1_1" />
+                android:text="@string/a4_1" />
 
             <RadioButton
                 android:id="@+id/rB2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="@string/a1_2" />
+                android:text="@string/a4_2" />
 
             <RadioButton
                 android:id="@+id/rB3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="@string/a1_3" />
+                android:text="@string/a4_3" />
 
             <RadioButton
                 android:id="@+id/rB4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="@string/a1_4" />
+                android:text="@string/a4_4" />
         </RadioGroup>
 
 

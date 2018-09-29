@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,54 +47,61 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="@string/q1" />
+            android:text="@string/q2" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/sora" />
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <RadioGroup
+            <ImageButton
+                android:id="@+id/imageB1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@android:drawable/btn_minus" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/imageB2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@android:drawable/btn_minus" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-            <RadioButton
-                android:id="@+id/rB1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a1_1" />
+            <ImageButton
+                android:id="@+id/imageB3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@android:drawable/btn_minus" />
 
-            <RadioButton
-                android:id="@+id/rB2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a1_2" />
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
 
-            <RadioButton
-                android:id="@+id/rB3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a1_3" />
+            <ImageButton
+                android:id="@+id/imageB4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@android:drawable/btn_minus" />
 
-            <RadioButton
-                android:id="@+id/rB4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a1_4" />
-        </RadioGroup>
+        </LinearLayout>
 
 
     </LinearLayout>

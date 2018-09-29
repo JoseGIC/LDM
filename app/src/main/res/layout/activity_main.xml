@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -7,19 +8,16 @@
     android:paddingBottom="40dp"
     android:paddingRight="16dp"
     android:background="@drawable/freaky_quiz"
-    android:baselineAligned="false"
-    android:id="@+id/layoutMain">
+    android:gravity="bottom|center">
 
 
     <TextView
         android:id="@+id/textPulsar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:textAlignment="center"
-        android:text="@string/comenzar"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="15sp"/>
+        android:text="@string/start"
+        android:textSize="20sp"/>
 
 
 </LinearLayout>
