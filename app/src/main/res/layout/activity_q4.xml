@@ -62,38 +62,30 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <RadioGroup
+        <Switch
+            android:id="@+id/switch1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/a4_1" />
 
-            <RadioButton
-                android:id="@+id/rB1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a4_1" />
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_2" />
 
-            <RadioButton
-                android:id="@+id/rB2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a4_2" />
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_3" />
 
-            <RadioButton
-                android:id="@+id/rB3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a4_3" />
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_4" />
 
-            <RadioButton
-                android:id="@+id/rB4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/a4_4" />
-        </RadioGroup>
 
 
     </LinearLayout>

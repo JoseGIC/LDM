@@ -9,7 +9,7 @@
     <string name="q1">¿A qué personaje pertenece este arma?</string>
     <string name="q2">¿Cuál de estas imágenes corresponde con las reliquias de la muerte de Harry Potter?</string>
     <string name="q3">¿Cuál de los siguientes nombres se corresponde con este aparato?</string>
-    <string name="q4">question 4</string>
+    <string name="q4">¿Cuales de …? Puede haber mas de una correcta</string>
 
     <string name="a1_1">Mickey</string>
     <string name="a1_2">Sora</string>

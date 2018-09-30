@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,7 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
     int contador;
     TextView puntos;
     Button botonConfirmar;
-    RadioButton rBCorrecto;
+    Switch switch1, switch2, switch3, switch4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,10 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
         puntos = (TextView)findViewById(R.id.textPuntos);
         puntos.setText(String.valueOf(contador));
 
-        rBCorrecto = (RadioButton)findViewById(R.id.rB3); // correcta 3
+        switch1 = (Switch) findViewById(R.id.switch1); // correctas 3 y 4
+        switch2 = (Switch) findViewById(R.id.switch2);
+        switch3 = (Switch) findViewById(R.id.switch3);
+        switch4 = (Switch) findViewById(R.id.switch4);
 
         botonConfirmar = (Button)findViewById(R.id.botonConfirmar);
         botonConfirmar.setOnClickListener(this);
@@ -55,7 +59,7 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
 
             case R.id.botonConfirmar:
 
-                if(rBCorrecto.isChecked()) {
+                if(!switch1.isChecked() && !switch2.isChecked() && switch3.isChecked() && switch4.isChecked()) {
                     //contador = contador + 4;
                     contador++;
                     Toast.makeText(this, "Correcto!", Toast.LENGTH_SHORT).show();
