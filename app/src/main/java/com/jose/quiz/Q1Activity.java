@@ -56,8 +56,8 @@ public class Q1Activity extends AppCompatActivity implements View.OnClickListene
             case R.id.botonConfirmar:
 
                 if(rBCorrecto.isChecked()) {
-                    contador = contador + 4;
-                    //contador++;
+                    //contador = contador + 4;
+                    contador++;
                     Toast.makeText(this, "Correcto!", Toast.LENGTH_SHORT).show();
                     nextActivity(true);
 

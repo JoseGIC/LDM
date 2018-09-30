@@ -6,18 +6,20 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Q3Activity extends AppCompatActivity implements View.OnClickListener {
+public class Q3Activity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     int contador;
     TextView puntos;
+    Spinner spinner;
     Button botonConfirmar;
-    RadioButton rBCorrecto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +31,12 @@ public class Q3Activity extends AppCompatActivity implements View.OnClickListene
         puntos = (TextView)findViewById(R.id.textPuntos);
         puntos.setText(String.valueOf(contador));
 
-        rBCorrecto = (RadioButton)findViewById(R.id.rB1); // correcta 1
+        spinner = (Spinner) findViewById(R.id.spinner); //correcta 1
+        spinner.setOnItemSelectedListener(this);
 
         botonConfirmar = (Button)findViewById(R.id.botonConfirmar);
         botonConfirmar.setOnClickListener(this);
+
     }
 
 
@@ -55,9 +59,9 @@ public class Q3Activity extends AppCompatActivity implements View.OnClickListene
 
             case R.id.botonConfirmar:
 
-                if(rBCorrecto.isChecked()) {
-                    contador = contador + 4;
-                    //contador++;
+                if(spinner.getSelectedItemPosition() == 1) {  //correcta 1
+                    //contador = contador + 4;
+                    contador++;
                     Toast.makeText(this, "Correcto!", Toast.LENGTH_SHORT).show();
                     nextActivity(true);
 
@@ -76,6 +80,14 @@ public class Q3Activity extends AppCompatActivity implements View.OnClickListene
                 break;
         }
     }
+
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
+
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {}
 
 
     private void nextActivity(boolean next) {

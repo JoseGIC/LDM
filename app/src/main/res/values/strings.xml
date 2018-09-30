@@ -8,7 +8,7 @@
 
     <string name="q1">¿A qué personaje pertenece este arma?</string>
     <string name="q2">¿Cuál de estas imágenes corresponde con las reliquias de la muerte de Harry Potter?</string>
-    <string name="q3">question 3</string>
+    <string name="q3">¿Cuál de los siguientes nombres se corresponde con este aparato?</string>
     <string name="q4">question 4</string>
 
     <string name="a1_1">Mickey</string>
@@ -21,10 +21,13 @@
     <string name="a2_3">answer 3</string>
     <string name="a2_4">answer 4</string>
 
-    <string name="a3_1">answer 1</string>
-    <string name="a3_2">answer 2</string>
-    <string name="a3_3">answer 3</string>
-    <string name="a3_4">answer 4</string>
+    <string-array name="a3_array">
+        <item>Selecciona una opción…</item>
+        <item>Honorball</item>
+        <item>Ultraball</item>
+        <item>Pokeball</item>
+        <item>Masterball</item>
+    </string-array>
 
     <string name="a4_1">answer 1</string>
     <string name="a4_2">answer 2</string>

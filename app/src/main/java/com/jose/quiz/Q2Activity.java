@@ -69,8 +69,8 @@ public class Q2Activity extends AppCompatActivity implements View.OnClickListene
             case R.id.botonConfirmar:
 
                 if(iB3.isActivated()) {
-                    contador = contador + 4;
-                    //contador++;
+                    //contador = contador + 4;
+                    contador++;
                     Toast.makeText(this, "Correcto!", Toast.LENGTH_SHORT).show();
                     nextActivity(true);
 
