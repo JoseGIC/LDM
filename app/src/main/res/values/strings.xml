@@ -9,7 +9,7 @@
     <string name="q1">¿A qué personaje pertenece este arma?</string>
     <string name="q2">¿Cuál de estas imágenes corresponde con las reliquias de la muerte de Harry Potter?</string>
     <string name="q3">¿Cuál de los siguientes nombres se corresponde con este aparato?</string>
-    <string name="q4">¿Cuales de …? Puede haber mas de una correcta</string>
+    <string name="q4">¿Cuales de los siguientes personajes son miembros de la familia Skywalker? </string>
 
     <string name="a1_1">Mickey</string>
     <string name="a1_2">Sora</string>
@@ -29,9 +29,9 @@
         <item>Masterball</item>
     </string-array>
 
-    <string name="a4_1">answer 1</string>
-    <string name="a4_2">answer 2</string>
-    <string name="a4_3">answer 3</string>
-    <string name="a4_4">answer 4</string>
+    <string name="a4_1">Obi Wan Kenobi</string>
+    <string name="a4_2">Conde Dooku</string>
+    <string name="a4_3">Leia Organa</string>
+    <string name="a4_4">Kylo Ren</string>
 
 </resources>
