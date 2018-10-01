@@ -1,15 +1,16 @@
 <resources>
     <string name="app_name">Freaky Quiz</string>
     <string name="start">Pulse la pantalla para comenzar</string>
-
     <string name="confirmar">Confirmar</string>
-
     <string name="puntuacion">PUNTOS:</string>
+    <string name="ganador">¡HAS GANADO!</string>
+    <string name="inicio">INICIO</string>
 
     <string name="q1">¿A qué personaje pertenece este arma?</string>
     <string name="q2">¿Cuál de estas imágenes corresponde con las reliquias de la muerte de Harry Potter?</string>
     <string name="q3">¿Cuál de los siguientes nombres se corresponde con este aparato?</string>
     <string name="q4">¿Cuales de los siguientes personajes son miembros de la familia Skywalker? </string>
+    <string name="q5">¿Cual es el nombre del dragón verde de Daenerys? </string>
 
     <string name="a1_1">Mickey</string>
     <string name="a1_2">Sora</string>
@@ -33,5 +34,10 @@
     <string name="a4_2">Conde Dooku</string>
     <string name="a4_3">Leia Organa</string>
     <string name="a4_4">Kylo Ren</string>
+
+    <string name="a5_1">Balerion</string>
+    <string name="a5_2">Viserion</string>
+    <string name="a5_3">Drogon</string>
+    <string name="a5_4">Rhaegal</string>
 
 </resources>

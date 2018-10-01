@@ -7,33 +7,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.Switch;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Q4Activity extends AppCompatActivity implements View.OnClickListener {
+public class Q5Activity extends AppCompatActivity implements View.OnClickListener {
 
     int contador;
     TextView puntos;
     Button botonConfirmar;
-    Switch switch1, switch2, switch3, switch4;
+    CheckBox cB1, cB2, cB3, cB4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q4);
+        setContentView(R.layout.activity_q5);
 
         contador = getIntent().getIntExtra("contador", 0);
 
         puntos = (TextView)findViewById(R.id.textPuntos);
         puntos.setText(String.valueOf(contador));
 
-        switch1 = (Switch) findViewById(R.id.switch1); // correctas 3 y 4
-        switch2 = (Switch) findViewById(R.id.switch2);
-        switch3 = (Switch) findViewById(R.id.switch3);
-        switch4 = (Switch) findViewById(R.id.switch4);
+        cB1 = (CheckBox)findViewById(R.id.cB1);
+        cB2 = (CheckBox)findViewById(R.id.cB2);
+        cB3 = (CheckBox)findViewById(R.id.cB3);
+        cB4 = (CheckBox)findViewById(R.id.cB4);
+        cB1.setOnClickListener(this);
+        cB2.setOnClickListener(this);
+        cB3.setOnClickListener(this);
+        cB4.setOnClickListener(this);
 
         botonConfirmar = (Button)findViewById(R.id.botonConfirmar);
         botonConfirmar.setOnClickListener(this);
@@ -59,7 +63,7 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
 
             case R.id.botonConfirmar:
 
-                if(!switch1.isChecked() && !switch2.isChecked() && switch3.isChecked() && switch4.isChecked()) {
+                if(cB4.isChecked()) {
                     //contador = contador + 4;
                     contador++;
                     Toast.makeText(this, "Correcto!", Toast.LENGTH_SHORT).show();
@@ -76,6 +80,26 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
 
                 break;
 
+            case R.id.cB1:
+                desactivar();
+                cB1.setChecked(true);
+                break;
+
+            case R.id.cB2:
+                desactivar();
+                cB2.setChecked(true);
+                break;
+
+            case R.id.cB3:
+                desactivar();
+                cB3.setChecked(true);
+                break;
+
+            case R.id.cB4:
+                desactivar();
+                cB4.setChecked(true);
+                break;
+
             default:
                 break;
         }
@@ -85,7 +109,7 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
     private void nextActivity(boolean next) {
         Intent intent;
         if(next) {
-            intent = new Intent(this, Q5Activity.class);
+            intent = new Intent(this, FinalActivity.class);
             intent.putExtra("contador", contador);
         } else {
             intent = new Intent(this, MainActivity.class);
@@ -110,6 +134,14 @@ public class Q4Activity extends AppCompatActivity implements View.OnClickListene
         Toast.makeText(this, "-2 puntos", Toast.LENGTH_SHORT).show();
         contador = contador - 2;
         nextActivity(true);
+    }
+
+
+    private void desactivar() {
+        cB1.setChecked(false);
+        cB2.setChecked(false);
+        cB3.setChecked(false);
+        cB4.setChecked(false);
     }
 
 }

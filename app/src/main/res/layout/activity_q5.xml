@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,6 +35,7 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,12 +43,11 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/q3"
+            android:text="@string/q5"
             android:textSize="18sp" />
 
         <Space
@@ -55,19 +57,41 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/honorball" />
+            android:layout_height="220dp"
+            android:src="@drawable/rhaegal" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <Spinner
-            android:id="@+id/spinner"
+        <CheckBox
+            android:id="@+id/cB1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:entries="@array/a3_array" />
+            android:text="@string/a5_1" />
+
+        <CheckBox
+            android:id="@+id/cB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/a5_2" />
+
+        <CheckBox
+            android:id="@+id/cB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/a5_3" />
+
+        <CheckBox
+            android:id="@+id/cB4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/a5_4" />
+
 
     </LinearLayout>
 
@@ -75,7 +99,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom|center" >
+        android:gravity="bottom|center">
 
         <Button
             android:id="@+id/botonConfirmar"
